@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" font-family="'Fira Code','JetBrains Mono',Consolas,monospace">
+  <style>
+    .kw { fill: #cba6f7; }
+    .ty { fill: #f9e2af; }
+    .st { fill: #a6e3a1; }
+    .fn { fill: #89b4fa; }
+    .tx { fill: #cdd6f4; }
+    .nu { fill: #fab387; }
+    .ln { fill: #585b70; font-size: 13px; }
+    .code { font-size: 14px; white-space: pre; }
+    .cursor { animation: blink 0.9s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .steam { animation: steam 2.4s ease-in-out infinite; opacity: 0; }
+    .steam.s2 { animation-delay: 0.8s; }
+    .steam.s3 { animation-delay: 1.6s; }
+    @keyframes steam {
+      0% { opacity: 0; transform: translateY(6px); }
+      40% { opacity: .7; }
+      100% { opacity: 0; transform: translateY(-14px); }
+    }
+    .glow { animation: glow 3s ease-in-out infinite; }
+    @keyframes glow { 50% { opacity: .55; } }
+    .halo { animation: halo 3s ease-in-out infinite; }
+    @keyframes halo { 0%,100% { opacity: .07; } 50% { opacity: .13; } }
+  </style>
+
+  <defs>
+    <clipPath id="c1"><rect x="56" y="74" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;190;190;0" keyTimes="0;0.03;0.09;0.95;1"/></rect></clipPath>
+    <clipPath id="c2"><rect x="56" y="98" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;290;290;0" keyTimes="0;0.10;0.17;0.95;1"/></rect></clipPath>
+    <clipPath id="c3"><rect x="56" y="122" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;450;450;0" keyTimes="0;0.18;0.27;0.95;1"/></rect></clipPath>
+    <clipPath id="c5"><rect x="56" y="170" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;215;215;0" keyTimes="0;0.30;0.37;0.95;1"/></rect></clipPath>
+    <clipPath id="c6"><rect x="56" y="194" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;205;205;0" keyTimes="0;0.38;0.45;0.95;1"/></rect></clipPath>
+    <clipPath id="c7"><rect x="56" y="218" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;215;215;0" keyTimes="0;0.46;0.53;0.95;1"/></rect></clipPath>
+    <clipPath id="c8"><rect x="56" y="242" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;130;130;0" keyTimes="0;0.54;0.59;0.95;1"/></rect></clipPath>
+    <clipPath id="c9"><rect x="56" y="266" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;60;60;0" keyTimes="0;0.60;0.62;0.95;1"/></rect></clipPath>
+    <clipPath id="c10"><rect x="56" y="290" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;40;40;0" keyTimes="0;0.63;0.65;0.95;1"/></rect></clipPath>
+    <clipPath id="c11"><rect x="56" y="314" height="22" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;30;30;0" keyTimes="0;0.66;0.68;0.95;1"/></rect></clipPath>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="800" height="380" rx="14" fill="#11111b"/>
+
+  <!-- janela do editor -->
+  <rect x="16" y="20" width="520" height="340" rx="10" fill="#1e1e2e" stroke="#313244"/>
+  <rect x="16" y="20" width="520" height="34" rx="10" fill="#181825"/>
+  <rect x="16" y="44" width="520" height="10" fill="#181825"/>
+  <circle cx="38" cy="37" r="6" fill="#f38ba8"/>
+  <circle cx="58" cy="37" r="6" fill="#f9e2af"/>
+  <circle cx="78" cy="37" r="6" fill="#a6e3a1"/>
+  <text x="276" y="42" text-anchor="middle" fill="#7f849c" font-size="13">Teyson.java</text>
+
+  <!-- números de linha -->
+  <g class="ln" text-anchor="end">
+    <text x="42" y="90">1</text><text x="42" y="114">2</text><text x="42" y="138">3</text>
+    <text x="42" y="162">4</text><text x="42" y="186">5</text><text x="42" y="210">6</text>
+    <text x="42" y="234">7</text><text x="42" y="258">8</text><text x="42" y="282">9</text>
+    <text x="42" y="306">10</text><text x="42" y="330">11</text>
+  </g>
+
+  <!-- código sendo digitado -->
+  <g class="code" xml:space="preserve">
+    <text x="56" y="90" clip-path="url(#c1)"><tspan class="kw">public class</tspan><tspan class="ty">&#160;Teyson</tspan><tspan class="tx">&#160;{</tspan></text>
+    <text x="56" y="114" clip-path="url(#c2)"><tspan class="ty">&#160;&#160;String</tspan><tspan class="tx">&#160;cargo = </tspan><tspan class="st">"AI Engineer"</tspan><tspan class="tx">;</tspan></text>
+    <text x="56" y="138" clip-path="url(#c3)"><tspan class="ty">&#160;&#160;String</tspan><tspan class="tx">[] stack = {</tspan><tspan class="st">"Java"</tspan><tspan class="tx">, </tspan><tspan class="st">"React"</tspan><tspan class="tx">, </tspan><tspan class="st">"Node"</tspan><tspan class="tx">, </tspan><tspan class="st">"IA"</tspan><tspan class="tx">};</tspan></text>
+    <text x="56" y="186" clip-path="url(#c5)"><tspan class="kw">&#160;&#160;public void</tspan><tspan class="fn">&#160;codar</tspan><tspan class="tx">() {</tspan></text>
+    <text x="56" y="210" clip-path="url(#c6)"><tspan class="kw">&#160;&#160;&#160;&#160;while</tspan><tspan class="tx">&#160;(cafe &gt; </tspan><tspan class="nu">0</tspan><tspan class="tx">) {</tspan></text>
+    <text x="56" y="234" clip-path="url(#c7)"><tspan class="fn">&#160;&#160;&#160;&#160;&#160;&#160;escreverCodigo</tspan><tspan class="tx">();</tspan></text>
+    <text x="56" y="258" clip-path="url(#c8)"><tspan class="tx">&#160;&#160;&#160;&#160;&#160;&#160;cafe--;</tspan></text>
+    <text x="56" y="282" clip-path="url(#c9)"><tspan class="tx">&#160;&#160;&#160;&#160;}</tspan></text>
+    <text x="56" y="306" clip-path="url(#c10)"><tspan class="tx">&#160;&#160;}</tspan></text>
+    <text x="56" y="330" clip-path="url(#c11)"><tspan class="tx">}</tspan></text>
+  </g>
+  <rect class="cursor" x="70" y="318" width="8" height="16" fill="#89b4fa" opacity="0">
+    <animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.68;0.69;0.95;1" calcMode="discrete"/>
+  </rect>
+
+  <!-- cena do dev -->
+  <g>
+    <!-- luz do monitor na parede -->
+    <ellipse class="halo" cx="630" cy="235" rx="80" ry="60" fill="#89b4fa"/>
+
+    <!-- cadeira -->
+    <rect x="728" y="215" width="14" height="80" rx="6" fill="#313244"/>
+    <rect x="700" y="290" width="56" height="10" rx="4" fill="#313244"/>
+    <rect x="724" y="300" width="8" height="40" fill="#313244"/>
+    <rect x="700" y="338" width="56" height="6" rx="3" fill="#313244"/>
+
+    <!-- pernas -->
+    <path d="M716 292 L680 296 L680 340" stroke="#45475a" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="668" y="336" width="22" height="8" rx="4" fill="#181825"/>
+
+    <!-- mesa -->
+    <rect x="556" y="270" width="160" height="10" rx="3" fill="#585b70"/>
+    <rect x="566" y="280" width="8" height="64" fill="#45475a"/>
+    <rect x="696" y="280" width="8" height="64" fill="#45475a"/>
+
+    <!-- notebook -->
+    <rect x="600" y="263" width="78" height="7" rx="2" fill="#a6adc8"/>
+    <path d="M602 263 L586 206" stroke="#a6adc8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M598 258 L585 210" stroke="#89b4fa" stroke-width="2" class="glow"/>
+
+    <!-- caneca -->
+    <rect x="560" y="248" width="16" height="22" rx="3" fill="#f38ba8"/>
+    <path d="M576 253 q8 0 8 7 q0 7 -8 7" stroke="#f38ba8" stroke-width="3" fill="none"/>
+    <path class="steam" d="M564 242 q-4 -6 0 -12 q4 -6 0 -12" stroke="#7f849c" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path class="steam s2" d="M569 242 q-4 -6 0 -12 q4 -6 0 -12" stroke="#7f849c" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path class="steam s3" d="M574 242 q-4 -6 0 -12 q4 -6 0 -12" stroke="#7f849c" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- corpo -->
+    <path d="M708 224 Q722 222 728 236 L730 292 L704 292 Q698 256 708 224 Z" fill="#89b4fa"/>
+
+    <!-- braço de trás -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 712 236;-5 712 236;0 712 236" dur="0.35s" begin="0.17s" repeatCount="indefinite"/>
+      <path d="M712 236 L690 262 L660 260" stroke="#74a0e6" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="657" cy="260" r="5" fill="#e6b9a6"/>
+    </g>
+
+    <!-- cabeça -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 1.5;0 0" dur="1.4s" repeatCount="indefinite"/>
+      <rect x="709" y="208" width="8" height="12" fill="#f5c2a8"/>
+      <circle cx="714" cy="194" r="18" fill="#f5c2a8"/>
+      <path d="M696 192 Q696 172 716 172 Q734 172 732 190 Q724 182 712 184 Q702 186 700 196 Z" fill="#45332a"/>
+      <circle cx="702" cy="196" r="2.2" fill="#11111b"/>
+      <!-- fone de ouvido -->
+      <path d="M697 190 Q714 166 731 190" stroke="#cba6f7" stroke-width="4" fill="none"/>
+      <rect x="726" y="186" width="8" height="12" rx="3" fill="#cba6f7"/>
+    </g>
+
+    <!-- braço da frente -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 716 238;-6 716 238;0 716 238" dur="0.35s" repeatCount="indefinite"/>
+      <path d="M716 238 L694 264 L664 264" stroke="#89b4fa" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="661" cy="264" r="5.5" fill="#f5c2a8"/>
+    </g>
+  </g>
+</svg>
